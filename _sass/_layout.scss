@@ -2,9 +2,9 @@
  * Site header
  */
 .site-header {
-    padding-top: 5px;
+    padding-top: 30px;
     padding-bottom: 5px;
-    border-bottom: 1px solid $grey-color-light;
+//    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -21,7 +21,7 @@
         display: inline-block;
         width: 50px;
         height: 50px;
-        background-image: url("https://pbs.twimg.com/profile_images/757667764102455297/M8sHu5Gh.jpg");
+        background-image: url("/images/qrc_logo.jpg");
         background-size: 50px;
     }
 
@@ -69,7 +69,7 @@
         &:hover {
             text-decoration: none;
             color: white;
-            background: black;
+            background: $nav-page-hover-background-color;
             border-radius: 5px;
         }
 
@@ -82,7 +82,7 @@
             display: block;
         }
 
-        .platform {
+        .release-date {
             display: inline-block;
             padding-left: 4px;
             border-radius: 5px;
@@ -92,6 +92,19 @@
             padding-bottom: 0px;
             color: white;
             background: #bdbdbd;
+            border: 1px solid #bdbdbd;
+        }
+
+        .platform {
+            display: inline-block;
+            padding-left: 4px;
+            border-radius: 5px;
+            font-size: 10px;
+            padding-right: 4px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            color: white;
+            background: $nav-platform-background-color;
             border: 1px solid #bdbdbd;
         }
 
@@ -170,7 +183,6 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
@@ -243,9 +255,22 @@
     padding: $spacing-unit 0;
 }
 
-.page-heading {
-    font-size: 20px;
+h1.page-heading {
     text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    color: $page-h1-color;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+h2.page-heading {
+    color: $page-h2-color;
+    font-weight: bold;
+}
+
+h3.page-heading {
+
 }
 
 .post-list {
@@ -311,5 +336,75 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+/**
+ * Piximap
+ */
+.product-entry.piximap {
+    .screenshot-1 {
+        background-image: url("/images/piximap_screenshot_1_ipad_frame.png");
+        background-size: cover;
+        display: inline-block;
+        height: calc(623px/2);
+        width: calc(786px/2);
+    }
+
+    .shock-message {
+        padding-left: 60px;
+    }
+}
+
+/**
+ * Team members
+ */
+.team-list {
+    & > div:hover {
+        background-color: #c3596b;
+        border-radius: 5px;
+
+        & .picture {
+          box-shadow: 0px 3px 3px #101010;
+          margin-top: -2px;
+          margin-bottom: 2px;
+        }
+    }
+
+    & > div {
+        padding: 14px;
+    }
+
+    .caption {
+        display: inline-block;
+        width: calc(100% - 130px);
+        vertical-align: top;
+        padding-left: 16px;
+        box-sizing: border-box;
+    }
+
+    .name a {
+        color: #ff9393;
+    }
+
+    .picture {
+        border-radius: 1000px;
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        background-size: cover;
+        border: 2px solid #565656;
+    }
+
+    .dgellow .picture {
+            background-image: url("https://pbs.twimg.com/profile_images/764011514017611776/4K5SYfmf.jpg");
+    }
+
+    .zzephyz .picture {
+            background-image: url("https://pbs.twimg.com/profile_images/762953076579926016/WkK0ULBy_400x400.jpg");
+    }
+
+    .gab_scheder .picture {
+        background-image: url("https://abs.twimg.com/sticky/default_profile_images/default_profile_0_400x400.png");
     }
 }

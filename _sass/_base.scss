@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
+    cursor: pointer;
 
     &:visited {
         color: darken($brand-color, 15%);
@@ -104,7 +105,22 @@ a {
     }
 }
 
+a.button {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #9aff7a;
+}
 
+a.button:hover {
+    background-color: #9aff7a;
+    color: #353c4a;
+    text-decoration: none;
+}
 
 /**
  * Blockquotes
@@ -172,6 +188,12 @@ pre {
     }
 }
 
+section {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 /**
@@ -203,4 +225,29 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+/**
+ * Grid
+ */
+@mixin col {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.col-center {
+    display: block !important;
+    margin: auto !important;
+}
+
+.col-sm-6 {
+    @include col;
+    width: 49%;
+}
+
+.col-sm-4 {
+    @include col;
+    width: 24%;
 }

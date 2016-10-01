@@ -4,5 +4,5 @@ title: PixiMap
 permalink: /piximap/
 platforms:
   - iOS
-  - Android
+release_date: Coming soon!
 ---
