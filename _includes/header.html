@@ -2,7 +2,10 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <a class="site-brand" href="{{ site.baseurl }}/">
+          <div class="logo"></div>
+          <div class="title">QRC<br>Labs</div>
+      </a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -16,7 +19,13 @@
       <div class="trigger">
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          <a class="page-link"
+             href="{{ my_page.url | prepend: site.baseurl }}">
+              <div class="title">{{ my_page.title }}</div>
+              {% for platform in my_page.platforms %}
+                <div class="platform">{{ platform }}</div>
+              {% endfor %}
+          </a>
           {% endif %}
         {% endfor %}
       </div>

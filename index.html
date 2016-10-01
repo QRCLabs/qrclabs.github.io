@@ -4,20 +4,45 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Products</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="product-list">
+      <div class="product-index piximap">
+          <div class="col-sm-6">
+              <div class="screenshot"></div>
+          </div>
+          <div class="col-sm-6">
+              <h2>Design entire game levels on your iPad.</h2>
+              <p><span class="e">PixiMap</span> is a complete and powerful tilemap editor developped primarly for iPad.</p>
+          </div>
+          <div class="col-sm-6">
+              <h3>Features</h3>
+              <ul>
+                  <li>Use layers for better control</li>
+                  <li>Randomize tiles</li>
+                  <li>Export to PNG, Tiled format (TMX), CSV</li>
+                  <li>iCloud support</li>
+              </ul>
+          </div>
+          <div class="col-sm-6">
+              <a class="button download">Download</a>
+              <a class="button support">Support</a>
+          </div>
+      </div>
+  </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- <ul class="post-list">
+       {% for post in site.posts %}
+       <li>
+       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+       <h2>
+       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+       </h2>
+       </li>
+       {% endfor %}
+       </ul> -->
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>

@@ -9,9 +9,9 @@
 title: Quantum Robotic Chivalry
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  We develop games and other kind of stuff. Because we like it.
+  We develop games, development tools and other things.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://qrc.moe" # the base hostname & protocol for your site
+url: "http://qrclabs.moe" # the base hostname & protocol for your site
 twitter_username: QRCLabs
 #github_username:
 
