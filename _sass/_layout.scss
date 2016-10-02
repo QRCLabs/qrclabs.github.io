@@ -9,7 +9,7 @@
 
 .site-brand {
     &:hover, &:visited {
-       color: inherit;
+       color: $text-color;
        text-decoration: none;
     }
 
