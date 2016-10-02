@@ -8,7 +8,7 @@
 }
 
 .site-brand {
-    &:hover, &:visited {
+    &, &:hover, &:visited {
        color: $text-color;
        text-decoration: none;
     }
