@@ -242,12 +242,59 @@ section {
     margin: auto !important;
 }
 
-.col-sm-6 {
-    @include col;
-    width: 49%;
+// XSmall
+@media (max-width: $screen-xs-max) {
+    .col-xs-6 {
+        @include col;
+        width: 49%;
+    }
+
+    .col-xs-4 {
+        @include col;
+        width: 24%;
+    }
 }
 
-.col-sm-4 {
-    @include col;
-    width: 24%;
+// Small
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .col-sm-12 {
+        @include col;
+        width: 100%;
+    }
+
+    .col-sm-6 {
+        @include col;
+        width: 49%;
+    }
+
+    .col-sm-4 {
+        @include col;
+        width: 24%;
+    }
+}
+
+// Medium
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .col-md-6 {
+        @include col;
+        width: 49%;
+    }
+
+    .col-md-4 {
+        @include col;
+        width: 24%;
+    }
+}
+
+// Large
+@media (min-width: $screen-lg-min) {
+    .col-lg-6 {
+        @include col;
+        width: 49%;
+    }
+
+    .col-lg-4 {
+        @include col;
+        width: 24%;
+    }
 }

@@ -356,6 +356,21 @@ h3.page-heading {
     }
 }
 
+@media (max-width: $screen-xs-max) {
+    .product-entry.piximap {
+        .screenshot-1 {
+            display: block;
+            margin: auto;
+        }
+
+        .shock-message {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+        }
+    }
+}
+
 /**
  * Team members
  */
