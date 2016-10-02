@@ -1,0 +1,82 @@
+.home {
+    // Piximap
+    .product-entry.piximap {
+        .screenshot-1 {
+            background-image: url("/images/piximap_screenshot_1_ipad_frame.png");
+            background-size: cover;
+            display: inline-block;
+            height: calc(623px/2);
+            width: calc(786px/2);
+        }
+
+        .shock-message {
+            padding-left: 60px;
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        .product-entry.piximap {
+            .screenshot-1 {
+                display: block;
+                margin: auto;
+            }
+
+            .shock-message {
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    // Team
+    .team-list {
+        & > div:hover {
+            background-color: #c3596b;
+            border-radius: 5px;
+
+            & .picture {
+                box-shadow: 0px 3px 3px #101010;
+                margin-top: -2px;
+                margin-bottom: 2px;
+            }
+        }
+
+        & > div {
+            padding: 14px;
+        }
+
+        .caption {
+            display: inline-block;
+            width: calc(100% - 130px);
+            vertical-align: top;
+            padding-left: 16px;
+            box-sizing: border-box;
+        }
+
+        .name a {
+            color: #ff9393;
+        }
+
+        .picture {
+            border-radius: 1000px;
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            background-size: cover;
+            border: 2px solid #565656;
+        }
+
+        .dgellow .picture {
+            background-image: url("https://pbs.twimg.com/profile_images/764011514017611776/4K5SYfmf.jpg");
+        }
+
+        .zzephyz .picture {
+            background-image: url("https://pbs.twimg.com/profile_images/762953076579926016/WkK0ULBy_400x400.jpg");
+        }
+
+        .gab_scheder .picture {
+            background-image: url("https://abs.twimg.com/sticky/default_profile_images/default_profile_0_400x400.png");
+        }
+    }
+}
