@@ -6,14 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Quantum Robotic Chivalry
-#email: your-email@domain.com
+title: QRC Labs
+email: qrclabs@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  We develop games, development tools and other things.
+  We solve problems.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://qrclabs.moe" # the base hostname & protocol for your site
-twitter_username: QRCLabs
-#github_username:
+url: "http://www.qrclabs.com" # the base hostname & protocol for your site
+# twitter_username: QRCLabs
+# github_username:
 
 # Build settings
 markdown: kramdown
